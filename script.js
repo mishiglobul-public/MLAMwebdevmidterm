@@ -7,14 +7,17 @@ daytoggle.addEventListener('click', () => {
 // day 'N' nite wha wha wha what
 
 const popupContainer = document.querySelector('.popup-container');
+// const mainContainer = document.querySelector('.container');
 
 function openPopup(id) {
     document.getElementById(id).style.display = 'flex';
     popupContainer.classList.add('active');
+    document.body.classList.add('no-scroll'); 
 }
 
 function closePopup() {
     popupContainer.classList.remove('active');
+    document.body.classList.remove('no-scroll'); 
     document.querySelectorAll('.pop-item').forEach(p => p.style.display = 'none');
 }
 

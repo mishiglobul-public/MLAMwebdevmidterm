@@ -20,6 +20,10 @@ body.Day {
     --accent: #3b5bdb;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 html {
     scroll-behavior: smooth;
      -webkit-tap-highlight-color: transparent;

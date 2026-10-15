@@ -22,6 +22,7 @@ body.Day {
 
 html {
     scroll-behavior: smooth;
+     -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -43,6 +44,8 @@ body::-webkit-scrollbar {
     gap: 2rem;
     transition: background-color 0.3s ease;
 }
+
+/* popups=== :(0997873q8r9 fuclk */
 
 .popup-container {
     position: fixed;
@@ -434,7 +437,7 @@ body::-webkit-scrollbar {
     background-color: red;
 }
 
-/* =================dynamics==================== */
+/* =================thingies that resizes==================== */
 
 /* phon */
 
@@ -442,6 +445,7 @@ body::-webkit-scrollbar {
     .section {
         padding: 4rem 1rem;
         height: auto;
+
     }
 
     .header,
@@ -460,6 +464,11 @@ body::-webkit-scrollbar {
     #sec-3 {
         flex-direction: column;
         font-size: 16px;
+    }
+
+    #sec-1{
+        margin-top: -3rem;
+        /* shit fix */
     }
 
     #sec-1>*,

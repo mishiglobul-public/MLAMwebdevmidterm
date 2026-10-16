@@ -26,6 +26,9 @@ document.getElementById('CyberADB').addEventListener('click', () => openPopup('A
 document.getElementById('CyberADB2').addEventListener('click', () => openPopup('ADBInsituteCert2'));
 // shitasscode
 
+// -===========
+
+
 popupContainer.addEventListener('click', (e) => {
     if (e.target === popupContainer) closePopup();
 });
@@ -36,6 +39,9 @@ projects.addEventListener('wheel', (e) => {
     e.preventDefault();
     projects.scrollBy({ left: e.deltaY, behavior: 'smooth' });
 }, { passive: false });
+
+
+// --------==========
 
 
 const observer = new IntersectionObserver((entries) => {

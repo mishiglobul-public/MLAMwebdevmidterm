@@ -16,7 +16,8 @@ body.Day {
     --bg: lightgrey;
     --surface: #f3efe6;
     --text: #1f2430;
-    --border: #d6d0c2;
+    /* --border: #d6d0c2; */
+    --border: #f0d9a9;
     --accent: #3b5bdb;
 }
 
@@ -419,7 +420,16 @@ body::-webkit-scrollbar {
 
 .skillspecial {
     animation: borderColor 0.7s ease-in-out infinite alternate;
+    transition: border-color 0.3s ease;
     cursor: pointer;
+}
+
+.skillspecial:nth-child(1) { animation-delay: -0.1s; }
+.skillspecial:nth-child(2) { animation-delay: -0.35s; }
+
+.skillspecial:hover {
+    animation: none;
+    border-color: var(--accent);
 }
 
 .skillspecial:active {

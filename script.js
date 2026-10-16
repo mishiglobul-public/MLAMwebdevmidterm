@@ -40,3 +40,12 @@ projects.addEventListener('wheel', (e) => {
     e.preventDefault();
     projects.scrollBy({ left: e.deltaY, behavior: 'smooth' });
 }, { passive: false });
+
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        entry.target.classList.toggle('visible', entry.isIntersecting);
+    });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));

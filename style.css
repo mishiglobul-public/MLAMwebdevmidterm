@@ -266,6 +266,7 @@ body::-webkit-scrollbar {
     object-fit: cover;
     align-self: center;
     border: 4px solid var(--border);
+    border-radius: 17px;
     /* animation: borderColor 10s infinite alternate; */
 }
 
@@ -392,7 +393,7 @@ body::-webkit-scrollbar {
     border-radius: 17px;
 }
 
-.skill-group h3 {
+.skill-group h5 {
     margin-block-start: 0.5em;
     margin-block-end: 0.5em;
 }
@@ -441,12 +442,13 @@ body::-webkit-scrollbar {
 #sec-3 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1rem;
 }
 
 
 .projects {
-    width: 100%;
+    width: 80%;
     min-width: 0;
     display: flex;
     background-color: var(--bg);
@@ -530,6 +532,28 @@ body::-webkit-scrollbar {
     text-indent: 3rem;
 }
 
+/* =================fancies==================== */
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* respect people who turn off animations */
+@media (prefers-reduced-motion: reduce) {
+    .fade-in {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
 
 /* =================thingies that resizes==================== */
 

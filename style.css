@@ -401,10 +401,11 @@ body::-webkit-scrollbar {
 
 .skill-list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 0.5rem;
     margin: 0;
-    padding: 0;
+    padding: 0 0.75rem;
 }
 
 .skill-list>* {
@@ -508,7 +509,7 @@ body::-webkit-scrollbar {
     border: 3px solid var(--border);
 }
 
-.prj-item-description { 
+.prj-item-description {
     display: flex;
     flex-direction: column;
     justify-content: center;

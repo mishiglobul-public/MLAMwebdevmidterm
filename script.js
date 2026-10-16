@@ -29,3 +29,14 @@ document.getElementById('CyberADB2').addEventListener('click', () => openPopup('
 popupContainer.addEventListener('click', (e) => {
     if (e.target === popupContainer) closePopup();
 });
+
+
+
+
+const projects = document.querySelector('.prj-inner-container');
+
+projects.addEventListener('wheel', (e) => {
+    if (Math.abs(e.deltaY) <= Math.abs(e.deltaX)) return; 
+    e.preventDefault();
+    projects.scrollBy({ left: e.deltaY, behavior: 'smooth' });
+}, { passive: false });

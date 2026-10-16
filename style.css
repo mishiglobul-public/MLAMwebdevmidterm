@@ -506,7 +506,7 @@ body::-webkit-scrollbar {
     height: auto;
     object-fit: cover;
     align-self: center;
-    border: 3px solid var(--border);
+    /* border: 3px solid var(--border); */
 }
 
 .prj-item-description {
@@ -569,7 +569,7 @@ body::-webkit-scrollbar {
 
     .header,
     .toggle {
-        width: 14rem;
+        width: 16rem;
         margin: 0.5rem;
         font-size: 13px;
     }

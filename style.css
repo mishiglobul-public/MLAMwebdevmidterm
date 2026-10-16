@@ -142,7 +142,6 @@ body::-webkit-scrollbar {
 
 .header-container>* {
     background-color: var(--surface);
-    /* border: 1px solid var(--border); */
     border: 2px solid var(--border);
     /* position: sticky;
     top: 0; */
@@ -387,7 +386,9 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     background-color: var(--bg);
-    height: 12rem;
+    min-height: 10rem;
+    height: auto;
+    padding: 0.75rem 1rem;
     align-items: center;
     justify-content: center;
     border: 2px solid var(--border);
@@ -458,7 +459,6 @@ body::-webkit-scrollbar {
     gap: 1rem;
 }
 
-
 .projects {
     width: 100%;
     min-width: 0;
@@ -470,7 +470,6 @@ body::-webkit-scrollbar {
     box-sizing: border-box;
     overflow: hidden;
 }
-
 
 .prj-inner-container {
     border-radius: 17px;
@@ -484,7 +483,7 @@ body::-webkit-scrollbar {
     scroll-snap-type: x mandatory;
     overscroll-behavior-x: contain;
     scrollbar-width: thin;
-    scrollbar-color: #2e3345 transparent;
+    scrollbar-color: var(--border) transparent;
 }
 
 .prj-inner-container::-webkit-scrollbar-button {
@@ -673,7 +672,7 @@ body::-webkit-scrollbar {
     }
 
     .skill-group {
-        height: 6rem;
+        min-height: 10rem;
     }
 
     .skill-group h3 {
@@ -727,9 +726,9 @@ body::-webkit-scrollbar {
         gap: 0.5rem;
     }
 
-    .skill-group {
-        height: 10rem;
-    }
+    /* .skill-group {
+        min-height: 10rem;
+    } */
 
     .skill-group h3 {
         /* font-size: 12px; */
